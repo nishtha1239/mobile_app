@@ -7,33 +7,29 @@ export default function Screen(props) {
   const [progressList, setProgressList] = useState([]);
   const [doneList, setDoneList] = useState([]);
 
-  const updateList = () => {
-    if (props.title === "To Do") {
-      setMessageList([
-        ...messageList,
-        ...Messages.filter((msg) => msg.flag === "To Do"),
-      ]);
-    } else if (props.title === "On Progress") {
-      setProgressList([
-        ...progressList,
-        ...Messages.filter((msg) => msg.flag === "On Progress"),
-      ]);
-    } else if (props.title === "Done") {
-      setDoneList([
-        ...doneList,
-        ...Messages.filter((msg) => msg.flag === "Done"),
-      ]);
-    }
-  };
   useEffect(() => {
-    if (props.title === "To Do") {
-      updateList();
-    } else if (props.title === "On Progress") {
-      updateList();
-    } else if (props.title === "Done") {
-      updateList();
-    }
-  }, [props.title, updateList]);
+    const updateList = () => {
+      if (props.title === "To Do") {
+        setMessageList((prevList) => [
+          ...prevList,
+          ...Messages.filter((msg) => msg.flag === "To Do"),
+        ]);
+      } else if (props.title === "On Progress") {
+        setProgressList((prevList) => [
+          ...prevList,
+          ...Messages.filter((msg) => msg.flag === "On Progress"),
+        ]);
+      } else if (props.title === "Done") {
+        setDoneList((prevList) => [
+          ...prevList,
+          ...Messages.filter((msg) => msg.flag === "Done"),
+        ]);
+      }
+    };
+
+    updateList();
+  }, [props.title]);
+
   return (
     <div>
       <div className="rounded-lg bg-gray-200 h-100">
