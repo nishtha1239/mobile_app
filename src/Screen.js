@@ -3,15 +3,9 @@ import Messages from "./Messages";
 import Card from "./Card";
 
 export default function Screen(props) {
-  const [message, setMessage] = useState("");
   const [messageList, setMessageList] = useState([]);
   const [progressList, setProgressList] = useState([]);
   const [doneList, setDoneList] = useState([]);
-  const [uniqueKey, setUniqueKey] = useState(0);
-
-  const updateMessage = (event) => {
-    setMessage(event.target.value);
-  };
 
   const updateList = () => {
     if (props.title === "To Do") {
