@@ -17,7 +17,7 @@ export default function Card(props) {
           {props.images && props.images.length !== 0 && (
             <img
               src={props.images[0]}
-              alt="Image"
+              alt="doesn't exist"
               className="overflow-hidden"
             />
           )}

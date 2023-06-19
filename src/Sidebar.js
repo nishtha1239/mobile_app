@@ -4,7 +4,7 @@ import { GrTask } from "react-icons/gr";
 import { SlPeople } from "react-icons/sl";
 import { AiOutlineSetting } from "react-icons/ai";
 import CircleItem from "./CircleItem";
-import { useState, useEffect } from "react";
+
 export default function Sidebar() {
   return (
     <div className="">
