@@ -1,0 +1,68 @@
+const Messages = [
+  {
+    id: "1",
+    heading: "Brainstorming",
+    content:
+      "Brainstorming brings team members' diverse experience into play. ",
+    images: [],
+    comments: Math.floor(Math.random() * 50) + 1,
+    files: Math.floor(Math.random() * 10) + 1,
+    flag: "On Progress",
+  },
+  {
+    id: "2",
+    heading: "Research",
+    content: "User research helps you to create an optimal product for users.",
+    images: [],
+    comments: Math.floor(Math.random() * 50) + 1,
+    files: Math.floor(Math.random() * 10) + 1,
+    flag: "To Do",
+  },
+  {
+    id: "3",
+    heading: "Wireframes",
+    content:
+      "Low fidelity wireframes include the most basic content and visuals.",
+    images: [],
+    comments: Math.floor(Math.random() * 50) + 1,
+    files: Math.floor(Math.random() * 10) + 1,
+    flag: "To Do",
+  },
+  {
+    id: "4",
+    heading: "Onboarding illustrations",
+    content: "",
+    images: ["./onboarding.png"],
+    comments: Math.floor(Math.random() * 50) + 1,
+    files: Math.floor(Math.random() * 10) + 1,
+    flag: "To Do",
+  },
+  {
+    id: "5",
+    heading: "Mobile App Design",
+    content: "",
+    images: ["./mobileDesigns.png"],
+    comments: Math.floor(Math.random() * 50) + 1,
+    files: Math.floor(Math.random() * 10) + 1,
+    flag: "Done",
+  },
+  {
+    id: "6",
+    heading: "Design System",
+    content: "It just needs to adapt the UI from what you did before ",
+    images: [],
+    comments: Math.floor(Math.random() * 50) + 1,
+    files: Math.floor(Math.random() * 10) + 1,
+    flag: "Done",
+  },
+  {
+    id: "7",
+    heading: "Moodboard",
+    content: "",
+    images: ["./moodboard1.png", "./moodboard2.png"],
+    comments: Math.floor(Math.random() * 50) + 1,
+    files: Math.floor(Math.random() * 10) + 1,
+    flag: "On Progress",
+  },
+];
+export default Messages;
