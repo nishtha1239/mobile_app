@@ -33,7 +33,7 @@ export default function Screen(props) {
     } else if (props.title === "Done") {
       updateList();
     }
-  }, [props.title]);
+  }, [props.title, updateList]);
   return (
     <div>
       <div className="rounded-lg bg-gray-200 h-100">
